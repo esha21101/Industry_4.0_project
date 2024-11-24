@@ -1,35 +1,36 @@
-#Distributed System for Industry 4.0
+# **Distributed System for Industry 4.0*
 A distributed system that integrates Suppliers, OEM Manufacturers, and Retailers to streamline the ordering, assembly, and feedback management processes for machine parts. The system ensures real-time communication, effective data management, and improved customer satisfaction.
 
-#Features
+# Features
 Order Management: Handle machine part orders from suppliers to OEM manufacturers and shipment to retailers.
 Feedback System: Allow retailers to submit customer feedback on finished products. Feedback is routed to the supplier for resolving defects and re-shipment.
 Integrated Data Model: Maintain a centralized database for tracking machine parts, assembly details, and feedback.
 Web Interface: A responsive front end for Suppliers, OEM Manufacturers, and Retailers with dynamic dashboards.
-#Tech Stack
+# Tech Stack
 Frontend
 Framework: Streamlit
 Languages: HTML, CSS, JavaScript (with React.js styles)
-Features:
+# Features:
 Dynamic forms for order creation and feedback submission.
 Real-time data visualization.
 Styled using custom CSS for user-friendly navigation.
-Backend
+# Backend
 Framework: Flask
 APIs: RESTful APIs for order and feedback management.
 Programming Language: Python
-#Features:
+# Features:
 Endpoint for order management (/orders).
 Endpoint for feedback routing (/feedback).
 Database
 Database System: SQLite
 Schema: Centralized schema with tables for orders, feedback, products, and assembly details.
 Installation
-Prerequisites
+
+# Prerequisites
 Python 3.8+
 Flask
 Streamlit
-#Setup
+# Setup
 Clone the repository:
 
 bash
@@ -57,7 +58,7 @@ Run the frontend:
 bash
 Copy code
 streamlit run frontend/interface.py  
-Usage
+# Usage
 Backend APIs
 Order API:
 
@@ -95,11 +96,11 @@ Copy code
   "feedback_id": 789,  
   "status": "received"  
 }  
-Frontend Interface
+# Frontend Interface
 Suppliers: View and manage part orders.
 OEM Manufacturers: Track product assembly and manage supplier communication.
 Retailers: Submit feedback and review order details.
-Project Structure
+# Project Structure
 graphql
 Copy code
 distributed-system-industry4.0/  
@@ -120,8 +121,8 @@ distributed-system-industry4.0/
 │  
 ├── requirements.txt             # Python dependencies  
 ├── README.md                    # Project documentation  
-Future Enhancements
+# Future Enhancements
 Integration with cloud databases (e.g., PostgreSQL).
 Real-time notifications for feedback updates.
 Advanced analytics and reporting dashboards.
-#Pull requests are welcome. For major changes, please open an issue to discuss what you would like to change.
+# Pull requests are welcome. For major changes, please open an issue to discuss what you would like to change.
