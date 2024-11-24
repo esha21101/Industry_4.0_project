@@ -2,108 +2,108 @@
 A distributed system that integrates Suppliers, OEM Manufacturers, and Retailers to streamline the ordering, assembly, and feedback management processes for machine parts. The system ensures real-time communication, effective data management, and improved customer satisfaction.
 
 # Features
-Order Management: Handle machine part orders from suppliers to OEM manufacturers and shipment to retailers.
-Feedback System: Allow retailers to submit customer feedback on finished products. Feedback is routed to the supplier for resolving defects and re-shipment.
-Integrated Data Model: Maintain a centralized database for tracking machine parts, assembly details, and feedback.
+Order Management: Handle machine part orders from suppliers to OEM manufacturers and shipment to retailers.<br>
+Feedback System: Allow retailers to submit customer feedback on finished products. Feedback is routed to the supplier for resolving defects and re-shipment.<br>
+Integrated Data Model: Maintain a centralized database for tracking machine parts, assembly details, and feedback.<br>
 Web Interface: A responsive front end for Suppliers, OEM Manufacturers, and Retailers with dynamic dashboards.
 # Tech Stack
-Frontend
-Framework: Streamlit
+# Frontend
+Framework: Streamlit<br>
 Languages: HTML, CSS, JavaScript (with React.js styles)
 # Features:
-Dynamic forms for order creation and feedback submission.
-Real-time data visualization.
+Dynamic forms for order creation and feedback submission.<br>
+Real-time data visualization.<br>
 Styled using custom CSS for user-friendly navigation.
 # Backend
-Framework: Flask
-APIs: RESTful APIs for order and feedback management.
+Framework: Flask<br>
+APIs: RESTful APIs for order and feedback management.<br>
 Programming Language: Python
 # Features:
-Endpoint for order management (/orders).
-Endpoint for feedback routing (/feedback).
-Database
-Database System: SQLite
-Schema: Centralized schema with tables for orders, feedback, products, and assembly details.
+Endpoint for order management (/orders).<br>
+Endpoint for feedback routing (/feedback).<br>
+Database<br>
+Database System: SQLite<br>
+Schema: Centralized schema with tables for orders, feedback, products, and assembly details.<br>
 Installation
 
 # Prerequisites
-Python 3.8+
-Flask
-Streamlit
+ Python 3.8+<br>
+ Flask<br>
+ Streamlit<br>
 # Setup
 Clone the repository:
 
-bash
+bash<br>
 Copy code
-git clone https://github.com/your-username/distributed-system-industry4.0.git  
-cd distributed-system-industry4.0  
-Create a virtual environment and activate it:
+git clone https://github.com/your-username/distributed-system-industry4.0.git  <br>
+cd distributed-system-industry4.0  <br>
+Create a virtual environment and activate it:<br>
 
-bash
+bash<br>
 Copy code
-python -m venv env  
-source env/bin/activate  # On Windows: env\Scripts\activate  
-Install dependencies:
+python -m venv env  <br>
+source env/bin/activate  # On Windows: env\Scripts\activate <br> 
+Install dependencies:<br>
 
-bash
-Copy code
-pip install -r requirements.txt  
-Run the backend server:
+bash<br>
+Copy code<br>
+pip install -r requirements.txt  <br>
+Run the backend server:<br>
 
-bash
-Copy code
-python backend/app.py  
-Run the frontend:
+bash<br>
+Copy code<br>
+python backend/app.py  <br>
+Run the frontend:<br>
 
-bash
-Copy code
-streamlit run frontend/interface.py  
+bash<br>
+Copy code<br>
+streamlit run frontend/interface.py<br>  
 # Usage
-Backend APIs
-Order API:
+Backend APIs<br>
+Order API:<br>
 
-Endpoint: POST /orders
-Example Request:
-json
-Copy code
+Endpoint: POST /orders<br>
+Example Request:<br>
+json<br>
+Copy code<br>
 {  
-  "product_id": 123,  
-  "quantity": 5,  
-  "retailer_id": 10  
+  "product_id": 123, <br> 
+  "quantity": 5,  <br>
+  "retailer_id": 10  <br>
 }  
-Response:
-json
-Copy code
+Response:<br>
+json<br>
+Copy code<br>
 {  
-  "order_id": 456,  
-  "status": "success"  
+  "order_id": 456, <br> 
+  "status": "success"  <br>
 }  
-Feedback API:
+Feedback API:<br>
 
-Endpoint: POST /feedback
-Example Request:
-json
-Copy code
+Endpoint: POST /feedback<br>
+Example Request:<br>
+json<br>
+Copy code<br>
 {  
-  "product_id": 123,  
-  "feedback": "Part defective",  
-  "retailer_id": 10  
+  "product_id": 123,  <br>
+  "feedback": "Part defective",  <br>
+  "retailer_id": 10  <br>
 }  
-Response:
-json
-Copy code
+Response:<br>
+json<br>
+Copy code<br>
 {  
-  "feedback_id": 789,  
-  "status": "received"  
+  "feedback_id": 789,  <br>
+  "status": "received"  <br>
 }  
 # Frontend Interface
-Suppliers: View and manage part orders.
-OEM Manufacturers: Track product assembly and manage supplier communication.
-Retailers: Submit feedback and review order details.
+Suppliers: View and manage part orders.<br>
+OEM Manufacturers: Track product assembly and manage supplier communication.<br>
+Retailers: Submit feedback and review order details.<br>
 # Project Structure
-graphql
-Copy code
-distributed-system-industry4.0/  
+graphql<br>
+Copy code<br>
+distributed-system-industry4.0/  <br>
 │  
 ├── backend/  
 │   ├── app.py                   # Main Flask application  
@@ -122,7 +122,7 @@ distributed-system-industry4.0/
 ├── requirements.txt             # Python dependencies  
 ├── README.md                    # Project documentation  
 # Future Enhancements
-Integration with cloud databases (e.g., PostgreSQL).
-Real-time notifications for feedback updates.
-Advanced analytics and reporting dashboards.
+Integration with cloud databases (e.g., PostgreSQL).<br>
+Real-time notifications for feedback updates.<br>
+Advanced analytics and reporting dashboards.<br>
 # Pull requests are welcome. For major changes, please open an issue to discuss what you would like to change.
